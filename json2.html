@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <script>
+            let obj={
+                  "product" : "astro" , 
+                 "init" : "2023020700" , 
+                 "dataseries" : [ { "timepoint" : 3, "cloudcover" : 9, "seeing" : 6, "transparency" : 5, "lifted_index" : 2, "rh2m" : 11, "wind10m" : { "direction" : "NE", "speed" : 2 }, "temp2m" : 21, "prec_type" : "none" }, 
+                                  { "timepoint" : 6, "cloudcover" : 9, "seeing" : 6, "transparency" : 4, "lifted_index" : 2, "rh2m" : 10, "wind10m" : { "direction" : "NE", "speed" : 2 }, "temp2m" : 22, "prec_type" : "none" }, 
+                                  { "timepoint" : 9, "cloudcover" : 7, "seeing" : 6, "transparency" : 3, "lifted_index" : 2, "rh2m" : 8, "wind10m" : { "direction" : "NE", "speed" : 2 }, "temp2m" : 24, "prec_type" : "none" }, 
+                                  { "timepoint" : 12, "cloudcover" : 8, "seeing" : 6, "transparency" : 4, "lifted_index" : 2, "rh2m" : 10, "wind10m" : { "direction" : "N", "speed" : 2 }, "temp2m" : 22, "prec_type" : "none" }, 
+                                  { "timepoint" : 15, "cloudcover" : 8, "seeing" : 6, "transparency" : 4, "lifted_index" : 2, "rh2m" : 11, "wind10m" : { "direction" : "NE", "speed" : 2 }, "temp2m" : 21, "prec_type" : "none" }, 
+                                  { "timepoint" : 18, "cloudcover" : 8, "seeing" : 8, "transparency" : 4, "lifted_index" : 2, "rh2m" : 11, "wind10m" : { "direction" : "NE", "speed" : 2 }, "temp2m" : 21, "prec_type" : "none" }, 
+                                  { "timepoint" : 21, "cloudcover" : 9, "seeing" : 6, "transparency" : 6, "lifted_index" : 2, "rh2m" : 12, "wind10m" : { "direction" : "E", "speed" : 2 }, "temp2m" : 20, "prec_type" : "none" }, 
+                                  { "timepoint" : 24, "cloudcover" : 9, "seeing" : 6, "transparency" : 5, "lifted_index" : 2, "rh2m" : 11, "wind10m" : { "direction" : "S", "speed" : 2 }, "temp2m" : 20, "prec_type" : "none" }, 
+                                  { "timepoint" : 27, "cloudcover" : 6, "seeing" : 6, "transparency" : 3, "lifted_index" : 6, "rh2m" : 8, "wind10m" : { "direction" : "SE", "speed" : 3 }, "temp2m" : 23, "prec_type" : "none" }, 
+                                  { "timepoint" : 30, "cloudcover" : 6, "seeing" : 6, "transparency" : 3, "lifted_index" : 2, "rh2m" : 6, "wind10m" : { "direction" : "S", "speed" : 2 }, "temp2m" : 25, "prec_type" : "none" }, 
+                                  { "timepoint" : 33, "cloudcover" : 9, "seeing" : 6, "transparency" : 3, "lifted_index" : 2, "rh2m" : 8, "wind10m" : { "direction" : "S", "speed" : 2 }, "temp2m" : 24, "prec_type" : "none" }, 
+                                  { "timepoint" : 36, "cloudcover" : 9, "seeing" : 6, "transparency" : 3, "lifted_index" : 6, "rh2m" : 9, "wind10m" : { "direction" : "SE", "speed" : 2 }, "temp2m" : 23, "prec_type" : "none" }, 
+                                  { "timepoint" : 39, "cloudcover" : 9, "seeing" : 6, "transparency" : 4, "lifted_index" : 6, "rh2m" : 10, "wind10m" : { "direction" : "S", "speed" : 2 }, "temp2m" : 21, "prec_type" : "none" }, 
+                                  { "timepoint" : 42, "cloudcover" : 9, "seeing" : 6, "transparency" : 5, "lifted_index" : 6, "rh2m" : 11, "wind10m" : { "direction" : "SE", "speed" : 2 }, "temp2m" : 21, "prec_type" : "none" }, 
+                                  { "timepoint" : 45, "cloudcover" : 9, "seeing" : 6, "transparency" : 5, "lifted_index" : 6, "rh2m" : 11, "wind10m" : { "direction" : "SE", "speed" : 2 }, "temp2m" : 21, "prec_type" : "none" }, 
+                                  { "timepoint" : 48, "cloudcover" : 9, "seeing" : 6, "transparency" : 4, "lifted_index" : 6, "rh2m" : 11, "wind10m" : { "direction" : "SE", "speed" : 2 }, "temp2m" : 21, "prec_type" : "rain" }, 
+                                  { "timepoint" : 51, "cloudcover" : 9, "seeing" : 6, "transparency" : 4, "lifted_index" : 6, "rh2m" : 10, "wind10m" : { "direction" : "SE", "speed" : 2 }, "temp2m" : 21, "prec_type" : "none" }, 
+                                  { "timepoint" : 54, "cloudcover" : 9, "seeing" : 6, "transparency" : 4, "lifted_index" : 6, "rh2m" : 10, "wind10m" : { "direction" : "SE", "speed" : 2 }, "temp2m" : 21, "prec_type" : "rain" }, 
+                                  { "timepoint" : 57, "cloudcover" : 9, "seeing" : 6, "transparency" : 4, "lifted_index" : 6, "rh2m" : 10, "wind10m" : { "direction" : "SE", "speed" : 2 }, "temp2m" : 21, "prec_type" : "rain" }, 
+                                  { "timepoint" : 60, "cloudcover" : 9, "seeing" : 6, "transparency" : 4, "lifted_index" : 6, "rh2m" : 10, "wind10m" : { "direction" : "E", "speed" : 2 }, "temp2m" : 21, "prec_type" : "rain" }, 
+                                  { "timepoint" : 63, "cloudcover" : 8, "seeing" : 6, "transparency" : 4, "lifted_index" : 6, "rh2m" : 10, "wind10m" : { "direction" : "NE", "speed" : 2 }, "temp2m" : 21, "prec_type" : "rain" }, 
+                                  { "timepoint" : 66, "cloudcover" : 9, "seeing" : 6, "transparency" : 5, "lifted_index" : 6, "rh2m" : 11, "wind10m" : { "direction" : "NE", "speed" : 2 }, "temp2m" : 20, "prec_type" : "rain" }, 
+                                  { "timepoint" : 69, "cloudcover" : 9, "seeing" : 6, "transparency" : 6, "lifted_index" : 6, "rh2m" : 12, "wind10m" : { "direction" : "NE", "speed" : 2 }, "temp2m" : 20, "prec_type" : "none" }, 
+                                  { "timepoint" : 72, "cloudcover" : 9, "seeing" : 6, "transparency" : 6, "lifted_index" : 6, "rh2m" : 12, "wind10m" : { "direction" : "NE", "speed" : 2 }, "temp2m" : 20, "prec_type" : "none" } ] 
+                     };
+            let {product}=obj;
+            let {init}=obj;
+            let {dataseries}=obj;
+            document.write(`
+            <div class="container mt-5">
+                    <table class="table table-warning table-striped table-hover">
+                        <tr><th>products </th><th colspan="9">${product} </th></tr>
+                        <tr><th>init</th><th colspan="9">${init}</th></tr>
+                        <tr><th>timepoint</th>
+                            <th>cloudcover</th>
+                            <th>seeing</th>
+                            <th>transparency</th>
+                            <th>lifted_index</th>
+                            <th>rh2m</th>
+                            <th colspan="2" style="text-align:center">wind10m</th>
+                            <th>temp2m</th>
+                            <th>prec_type</th>
+                        </tr>
+                        <tr><td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td><td></td>
+                            <td></td>
+                            <td>direction</td>
+                            <td>speed</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+            `)
+            
+            dataseries.forEach((element,index)=>{
+                document.write(`
+                <tr><td>${element.timepoint}</td>
+                    <td>${element.cloudcover}</td>
+                    <td>${element.seeing}</td>
+                    <td>${element.transparency}</td>
+                    <td>${element.lifted_index}</td>
+                    <td>${element.rh2m}</td>
+                    <td>${element.wind10m.direction}</td>
+                    <td>${element.wind10m.speed}</td>
+                    <td>${element.temp2m}</td>
+                    <td>${element.prec_type}</td></tr>
+                `)       
+            })
+            document.write(`</table></div>`)
+        </script>
+    </body>
+</html>
